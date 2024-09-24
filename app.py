@@ -10,7 +10,7 @@ def index():
 
 @app.route("/getcode", methods=["GET"])
 def getcode():
-    return "getcode test123"
+    return "getcode Hello test"
 
 
 @app.route("/plus/<num1>/<num2>", methods=["GET"])
