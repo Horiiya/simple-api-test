@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Clone simple-api repository') {
             steps {
-                git url: 'https://github.com/nichaOrg/simple-api.git', branch: 'main'
+                git url: 'https://github.com/Horiiya/simple-api-test.git', branch: 'main'
             }
         }
 
@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                     dir('./robot3/') {
-                        git url: 'https://github.com/nichaOrg/simple-api-robot.git', branch: 'main'
+                        git url: 'https://github.com/Horiiya/simple-api-robot-test.git', branch: 'main'
                     }
                     sh 'cd ./robot3 && robot test_robot.robot'
                 }
